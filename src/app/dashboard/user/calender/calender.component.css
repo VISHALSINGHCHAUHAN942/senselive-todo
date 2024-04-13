@@ -1,0 +1,7 @@
+ejs-schedule {
+    height: 600px; /* You can adjust the height as needed */
+    display: block; /* Ensure it's displayed as a block element */
+  }
+  .custom-scheduler{
+    height: 600px; /* Set your desired default height */
+  }

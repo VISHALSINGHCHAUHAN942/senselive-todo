@@ -1,16 +1,5 @@
-.icons{
-    height: 15px;
-    width: 15px;
-}
-.text{
-    font-size: larger;
-    font-size: 20px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
 .example-container {
-    height: 500px;
+    height: 400px;
     overflow: auto;
   }
   .example-container2{
@@ -55,21 +44,4 @@
   }
   .calender{
     height: 400px;
-  }
-  .card1{
-    background-color: #BBBFBB;
-  }
-  .card2{
-    background-color: #DE7D70;
-  }
-  .card3{
-    background-color: #7982E0;
-  }
-  .card4{
-    background-color: #54A954;
-  }
-  .main-content{
-    margin-top: 70px;
-    overflow-x: hidden;
-    overflow-y: hidden;
   }

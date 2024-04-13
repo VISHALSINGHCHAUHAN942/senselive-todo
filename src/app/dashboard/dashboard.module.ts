@@ -9,6 +9,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CalenderComponent } from './user/calender/calender.component';
+import { NavbarComponent } from './user/navbar/navbar.component';
 
 
 @NgModule({

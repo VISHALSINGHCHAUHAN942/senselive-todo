@@ -18,14 +18,29 @@ import { MatTableModule } from '@angular/material/table';
 import { LoginModule } from './login/login.module';
 import { ForgotComponent } from './login/forgot/forgot.component';
 import { RegisterComponent } from './login/register/register.component';
+import { CalenderComponent } from './dashboard/user/calender/calender.component';
+import { ScheduleModule,RecurrenceEditorModule,DayService,WeekService,WorkWeekService,MonthService,MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
+import { NavbarComponent } from './dashboard/user/navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './superadmin/admin/home/home.component';
+import { AdminnavbarComponent } from './superadmin/admin/adminnavbar/adminnavbar.component';
+import { HttpClientModule } from '@angular/common/http';
+// Import the license key file
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    
+    CalenderComponent,
     ForgotComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent,
+    HomeComponent,
+    AdminnavbarComponent
   
   ],
   imports: [
@@ -38,9 +53,17 @@ import { RegisterComponent } from './login/register/register.component';
     MatDividerModule,
     MatIconModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    ScheduleModule,
+    RecurrenceEditorModule,
+    MatToolbarModule,
+    MatButtonModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [DayService,WeekService,WorkWeekService,MonthService,MonthAgendaService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
