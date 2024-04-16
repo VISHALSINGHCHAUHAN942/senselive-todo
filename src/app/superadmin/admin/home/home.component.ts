@@ -7,7 +7,7 @@ import * as Highcharts from 'highcharts';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-  displayedColumns = ['number','todo', 'name', 'weight', 'symbol','status','add'];
+  displayedColumns = ['number','todo','responsible', 'name', 'weight', 'symbol','status','add'];
   dataSource = ELEMENT_DATA;
 
   ngOnInit(): void {
@@ -47,34 +47,31 @@ piechartfun(){
 }
 export interface PeriodicElement {
   number:number;
+  responsible:string;
   name: string;
   todo: string;
-  weight: number;
+  weight: string;
   symbol: string;
   status:string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
-  {number:1,todo:'Get ready for annual meeting', name: 'Hydrogen', weight: 1.0079, symbol: 'H',status:'completed'},
+  {number:1,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:2,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:3,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:4,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:5,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:6,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:7,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:8,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:9,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:10,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:11,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:12,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+  {number:13,todo:'Get ready for annual meeting', responsible:'M.Labkhale',name: '11/04/2024', weight:'16/04/2024' , symbol: '2',status:'completed'},
+
+
+
 
 ];
 
